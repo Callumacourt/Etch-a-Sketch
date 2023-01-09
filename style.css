@@ -1,0 +1,32 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #grid-container {
+    display: grid;
+    grid-gap: 0em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    min-width: 2500x;
+    min-height: 1000px;
+    max-width: 2500px;
+    max-height: 1000px;
+  }
+  
+  .grid-item {
+    padding: 1fr;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+  .active {
+    background-color: red;
+  }
+
+  button {
+    display:flex;
+    justify-content: center;
+    height: 40px;
+width: 50px}
+
